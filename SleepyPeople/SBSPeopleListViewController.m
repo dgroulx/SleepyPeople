@@ -130,9 +130,12 @@
  
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-  NSLog(@"seguing");
-// Get the new view controller using [segue destinationViewController].
-// Pass the selected object to the new view controller.
+  if ([[segue identifier] isEqualToString:@"showMemberDetailsSegue"]) {
+    NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+    NSDictionary *person = people[indexPath.row];
+    SBSPersonDetailsViewController *vc = segue.destinationViewController;
+    vc.person = person;
+  }
 }
 
 @end

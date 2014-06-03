@@ -10,4 +10,7 @@
 
 @interface SBSPersonDetailsViewController : UIViewController
 
+@property (nonatomic) NSDictionary *person;
+@property IBOutlet UILabel *nameLabel;
+
 @end
