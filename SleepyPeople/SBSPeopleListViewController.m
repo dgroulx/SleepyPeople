@@ -22,7 +22,7 @@
 - (id)initWithCoder:(NSCoder *)aDecoder {
   self = [super initWithCoder:aDecoder];
   if (self) {
-    datastore = [[SBSMemberDatastore alloc] initWithTestData];
+    datastore = [[SBSMemberDatastore alloc] init];
   }
   return self;
 }

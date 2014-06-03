@@ -13,13 +13,13 @@
 - (id)initWithDictionary:(NSDictionary *)properties {
   self = [super init];
   if (self) {
-    _objectId = properties[@"ObjectId"];
-    _ama = properties[@"ama"];
-    _bio = properties[@"bio"];
-    _email = properties[@"email"];
-    _fb = properties[@"fb"];
-    _name = properties[@"name"];
-    _twitter = properties[@"twitter"];
+    _objectId = properties[@"objectId"];
+    _ama = properties[@"AMA"];
+    _bio = properties[@"BIO"];
+    _email = properties[@"EMAIL"];
+    _fb = properties[@"FB"];
+    _name = properties[@"NAME"];
+    _twitter = properties[@"TWITTER"];
     _pic = properties[@"pic"];
   }
   return self;
