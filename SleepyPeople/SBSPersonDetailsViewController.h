@@ -8,9 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
+@class SBSMember;
+
 @interface SBSPersonDetailsViewController : UIViewController
 
-@property (nonatomic) NSDictionary *person;
+@property (nonatomic) SBSMember *person;
 @property IBOutlet UILabel *nameLabel;
 
 @end

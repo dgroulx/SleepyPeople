@@ -8,6 +8,7 @@
 
 #import "SBSPeopleListViewController.h"
 #import "SBSPersonDetailsViewController.h"
+#import "SBSMember.h"
 
 @interface SBSPeopleListViewController () {
   NSArray *people;
@@ -20,28 +21,30 @@
 - (id)initWithCoder:(NSCoder *)aDecoder {
   self = [super initWithCoder:aDecoder];
   if (self) {
-    NSDictionary *trenton = @{@"ama": @"",
-                              @"bio": @"",
-                              @"email": @"",
-                              @"fb": @"",
-                              @"name": @"Trenton Broughton",
-                              @"twitter": @"",
-                              @"pic": @""};
-    NSDictionary *garrick = @{@"ama": @"",
-                              @"bio": @"",
-                              @"email": @"",
-                              @"fb": @"",
-                              @"name": @"Garrick Pohl",
-                              @"twitter": @"",
-                              @"pic": @""};
-    NSDictionary *ron = @{@"ama": @"",
-                          @"bio": @"",
-                          @"email": @"",
-                          @"fb": @"",
-                          @"name": @"Ron VanSurksum",
-                          @"twitter": @"",
-                          @"pic": @""};
-    people = @[trenton, garrick, ron];
+    NSDictionary *trentonDictionary = @{@"ama": @"",
+                                        @"bio": @"",
+                                        @"email": @"",
+                                        @"fb": @"",
+                                        @"name": @"Trenton Broughton",
+                                        @"twitter": @"",
+                                        @"pic": @""};
+    NSDictionary *garrickDictionary = @{@"ama": @"",
+                                        @"bio": @"",
+                                        @"email": @"",
+                                        @"fb": @"",
+                                        @"name": @"Garrick Pohl",
+                                        @"twitter": @"",
+                                        @"pic": @""};
+    NSDictionary *ronDictionary = @{@"ama": @"",
+                                    @"bio": @"",
+                                    @"email": @"",
+                                    @"fb": @"",
+                                    @"name": @"Ron VanSurksum",
+                                    @"twitter": @"",
+                                    @"pic": @""};
+    people = @[[[SBSMember alloc] initWithDictionary:trentonDictionary],
+               [[SBSMember alloc] initWithDictionary:garrickDictionary],
+               [[SBSMember alloc] initWithDictionary:ronDictionary]];
   }
   return self;
 }
@@ -78,7 +81,8 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
   UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"memberCell" forIndexPath:indexPath];
-  cell.textLabel.text = people[indexPath.row][@"name"];
+  SBSMember *member = people[indexPath.row];
+  cell.textLabel.text = member.name;
   return cell;
 }
 
@@ -126,13 +130,13 @@
  */
 
 
- #pragma mark - Navigation
- 
+#pragma mark - Navigation
+
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
   if ([[segue identifier] isEqualToString:@"showMemberDetailsSegue"]) {
     NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-    NSDictionary *person = people[indexPath.row];
+    SBSMember *person = people[indexPath.row];
     SBSPersonDetailsViewController *vc = segue.destinationViewController;
     vc.person = person;
   }

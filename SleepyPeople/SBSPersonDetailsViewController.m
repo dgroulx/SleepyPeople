@@ -7,6 +7,7 @@
 //
 
 #import "SBSPersonDetailsViewController.h"
+#import "SBSMember.h"
 
 @interface SBSPersonDetailsViewController ()
 
@@ -26,7 +27,7 @@
 - (void)viewDidLoad
 {
   [super viewDidLoad];
-  self.nameLabel.text = self.person[@"name"];
+  self.nameLabel.text = self.person.name;
 }
 
 - (void)didReceiveMemoryWarning
@@ -46,7 +47,7 @@
  }
  */
 
-- (void)setPerson:(NSDictionary *)person {
+- (void)setPerson:(SBSMember *)person {
   _person = person;
 }
 
