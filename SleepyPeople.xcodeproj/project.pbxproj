@@ -1,0 +1,453 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6370EF05193E0D420068F130 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6370EF04193E0D420068F130 /* Foundation.framework */; };
+		6370EF07193E0D420068F130 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6370EF06193E0D420068F130 /* CoreGraphics.framework */; };
+		6370EF09193E0D420068F130 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6370EF08193E0D420068F130 /* UIKit.framework */; };
+		6370EF0F193E0D420068F130 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6370EF0D193E0D420068F130 /* InfoPlist.strings */; };
+		6370EF11193E0D420068F130 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6370EF10193E0D420068F130 /* main.m */; };
+		6370EF15193E0D420068F130 /* SBSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6370EF14193E0D420068F130 /* SBSAppDelegate.m */; };
+		6370EF17193E0D420068F130 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6370EF16193E0D420068F130 /* Images.xcassets */; };
+		6370EF1E193E0D420068F130 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6370EF1D193E0D420068F130 /* XCTest.framework */; };
+		6370EF1F193E0D420068F130 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6370EF04193E0D420068F130 /* Foundation.framework */; };
+		6370EF20193E0D420068F130 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6370EF08193E0D420068F130 /* UIKit.framework */; };
+		6370EF28193E0D420068F130 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6370EF26193E0D420068F130 /* InfoPlist.strings */; };
+		6370EF2A193E0D420068F130 /* SleepyPeopleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6370EF29193E0D420068F130 /* SleepyPeopleTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6370EF21193E0D420068F130 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6370EEF9193E0D420068F130 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6370EF00193E0D420068F130;
+			remoteInfo = SleepyPeople;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6370EF01193E0D420068F130 /* SleepyPeople.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SleepyPeople.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6370EF04193E0D420068F130 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		6370EF06193E0D420068F130 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		6370EF08193E0D420068F130 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		6370EF0C193E0D420068F130 /* SleepyPeople-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SleepyPeople-Info.plist"; sourceTree = "<group>"; };
+		6370EF0E193E0D420068F130 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6370EF10193E0D420068F130 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6370EF12193E0D420068F130 /* SleepyPeople-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SleepyPeople-Prefix.pch"; sourceTree = "<group>"; };
+		6370EF13193E0D420068F130 /* SBSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBSAppDelegate.h; sourceTree = "<group>"; };
+		6370EF14193E0D420068F130 /* SBSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBSAppDelegate.m; sourceTree = "<group>"; };
+		6370EF16193E0D420068F130 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		6370EF1C193E0D420068F130 /* SleepyPeopleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SleepyPeopleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6370EF1D193E0D420068F130 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		6370EF25193E0D420068F130 /* SleepyPeopleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SleepyPeopleTests-Info.plist"; sourceTree = "<group>"; };
+		6370EF27193E0D420068F130 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6370EF29193E0D420068F130 /* SleepyPeopleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SleepyPeopleTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6370EEFE193E0D420068F130 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6370EF07193E0D420068F130 /* CoreGraphics.framework in Frameworks */,
+				6370EF09193E0D420068F130 /* UIKit.framework in Frameworks */,
+				6370EF05193E0D420068F130 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6370EF19193E0D420068F130 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6370EF1E193E0D420068F130 /* XCTest.framework in Frameworks */,
+				6370EF20193E0D420068F130 /* UIKit.framework in Frameworks */,
+				6370EF1F193E0D420068F130 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6370EEF8193E0D420068F130 = {
+			isa = PBXGroup;
+			children = (
+				6370EF0A193E0D420068F130 /* SleepyPeople */,
+				6370EF23193E0D420068F130 /* SleepyPeopleTests */,
+				6370EF03193E0D420068F130 /* Frameworks */,
+				6370EF02193E0D420068F130 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6370EF02193E0D420068F130 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6370EF01193E0D420068F130 /* SleepyPeople.app */,
+				6370EF1C193E0D420068F130 /* SleepyPeopleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6370EF03193E0D420068F130 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6370EF04193E0D420068F130 /* Foundation.framework */,
+				6370EF06193E0D420068F130 /* CoreGraphics.framework */,
+				6370EF08193E0D420068F130 /* UIKit.framework */,
+				6370EF1D193E0D420068F130 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6370EF0A193E0D420068F130 /* SleepyPeople */ = {
+			isa = PBXGroup;
+			children = (
+				6370EF13193E0D420068F130 /* SBSAppDelegate.h */,
+				6370EF14193E0D420068F130 /* SBSAppDelegate.m */,
+				6370EF16193E0D420068F130 /* Images.xcassets */,
+				6370EF0B193E0D420068F130 /* Supporting Files */,
+			);
+			path = SleepyPeople;
+			sourceTree = "<group>";
+		};
+		6370EF0B193E0D420068F130 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6370EF0C193E0D420068F130 /* SleepyPeople-Info.plist */,
+				6370EF0D193E0D420068F130 /* InfoPlist.strings */,
+				6370EF10193E0D420068F130 /* main.m */,
+				6370EF12193E0D420068F130 /* SleepyPeople-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6370EF23193E0D420068F130 /* SleepyPeopleTests */ = {
+			isa = PBXGroup;
+			children = (
+				6370EF29193E0D420068F130 /* SleepyPeopleTests.m */,
+				6370EF24193E0D420068F130 /* Supporting Files */,
+			);
+			path = SleepyPeopleTests;
+			sourceTree = "<group>";
+		};
+		6370EF24193E0D420068F130 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6370EF25193E0D420068F130 /* SleepyPeopleTests-Info.plist */,
+				6370EF26193E0D420068F130 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6370EF00193E0D420068F130 /* SleepyPeople */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6370EF2D193E0D420068F130 /* Build configuration list for PBXNativeTarget "SleepyPeople" */;
+			buildPhases = (
+				6370EEFD193E0D420068F130 /* Sources */,
+				6370EEFE193E0D420068F130 /* Frameworks */,
+				6370EEFF193E0D420068F130 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SleepyPeople;
+			productName = SleepyPeople;
+			productReference = 6370EF01193E0D420068F130 /* SleepyPeople.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6370EF1B193E0D420068F130 /* SleepyPeopleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6370EF30193E0D420068F130 /* Build configuration list for PBXNativeTarget "SleepyPeopleTests" */;
+			buildPhases = (
+				6370EF18193E0D420068F130 /* Sources */,
+				6370EF19193E0D420068F130 /* Frameworks */,
+				6370EF1A193E0D420068F130 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6370EF22193E0D420068F130 /* PBXTargetDependency */,
+			);
+			name = SleepyPeopleTests;
+			productName = SleepyPeopleTests;
+			productReference = 6370EF1C193E0D420068F130 /* SleepyPeopleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6370EEF9193E0D420068F130 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = SBS;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "David Groulx";
+				TargetAttributes = {
+					6370EF1B193E0D420068F130 = {
+						TestTargetID = 6370EF00193E0D420068F130;
+					};
+				};
+			};
+			buildConfigurationList = 6370EEFC193E0D420068F130 /* Build configuration list for PBXProject "SleepyPeople" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 6370EEF8193E0D420068F130;
+			productRefGroup = 6370EF02193E0D420068F130 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6370EF00193E0D420068F130 /* SleepyPeople */,
+				6370EF1B193E0D420068F130 /* SleepyPeopleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6370EEFF193E0D420068F130 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6370EF0F193E0D420068F130 /* InfoPlist.strings in Resources */,
+				6370EF17193E0D420068F130 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6370EF1A193E0D420068F130 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6370EF28193E0D420068F130 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6370EEFD193E0D420068F130 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6370EF11193E0D420068F130 /* main.m in Sources */,
+				6370EF15193E0D420068F130 /* SBSAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6370EF18193E0D420068F130 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6370EF2A193E0D420068F130 /* SleepyPeopleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6370EF22193E0D420068F130 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6370EF00193E0D420068F130 /* SleepyPeople */;
+			targetProxy = 6370EF21193E0D420068F130 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6370EF0D193E0D420068F130 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6370EF0E193E0D420068F130 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		6370EF26193E0D420068F130 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6370EF27193E0D420068F130 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6370EF2B193E0D420068F130 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		6370EF2C193E0D420068F130 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6370EF2E193E0D420068F130 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SleepyPeople/SleepyPeople-Prefix.pch";
+				INFOPLIST_FILE = "SleepyPeople/SleepyPeople-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		6370EF2F193E0D420068F130 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SleepyPeople/SleepyPeople-Prefix.pch";
+				INFOPLIST_FILE = "SleepyPeople/SleepyPeople-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		6370EF31193E0D420068F130 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SleepyPeople.app/SleepyPeople";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SleepyPeople/SleepyPeople-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "SleepyPeopleTests/SleepyPeopleTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		6370EF32193E0D420068F130 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SleepyPeople.app/SleepyPeople";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SleepyPeople/SleepyPeople-Prefix.pch";
+				INFOPLIST_FILE = "SleepyPeopleTests/SleepyPeopleTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6370EEFC193E0D420068F130 /* Build configuration list for PBXProject "SleepyPeople" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6370EF2B193E0D420068F130 /* Debug */,
+				6370EF2C193E0D420068F130 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6370EF2D193E0D420068F130 /* Build configuration list for PBXNativeTarget "SleepyPeople" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6370EF2E193E0D420068F130 /* Debug */,
+				6370EF2F193E0D420068F130 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		6370EF30193E0D420068F130 /* Build configuration list for PBXNativeTarget "SleepyPeopleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6370EF31193E0D420068F130 /* Debug */,
+				6370EF32193E0D420068F130 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6370EEF9193E0D420068F130 /* Project object */;
+}
