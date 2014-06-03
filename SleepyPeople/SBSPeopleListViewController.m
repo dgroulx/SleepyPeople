@@ -9,9 +9,10 @@
 #import "SBSPeopleListViewController.h"
 #import "SBSPersonDetailsViewController.h"
 #import "SBSMember.h"
+#import "SBSMemberDatastore.h"
 
 @interface SBSPeopleListViewController () {
-  NSArray *people;
+  SBSMemberDatastore *datastore;
 }
 
 @end
@@ -21,30 +22,7 @@
 - (id)initWithCoder:(NSCoder *)aDecoder {
   self = [super initWithCoder:aDecoder];
   if (self) {
-    NSDictionary *trentonDictionary = @{@"ama": @"",
-                                        @"bio": @"",
-                                        @"email": @"",
-                                        @"fb": @"",
-                                        @"name": @"Trenton Broughton",
-                                        @"twitter": @"",
-                                        @"pic": @""};
-    NSDictionary *garrickDictionary = @{@"ama": @"",
-                                        @"bio": @"",
-                                        @"email": @"",
-                                        @"fb": @"",
-                                        @"name": @"Garrick Pohl",
-                                        @"twitter": @"",
-                                        @"pic": @""};
-    NSDictionary *ronDictionary = @{@"ama": @"",
-                                    @"bio": @"",
-                                    @"email": @"",
-                                    @"fb": @"",
-                                    @"name": @"Ron VanSurksum",
-                                    @"twitter": @"",
-                                    @"pic": @""};
-    people = @[[[SBSMember alloc] initWithDictionary:trentonDictionary],
-               [[SBSMember alloc] initWithDictionary:garrickDictionary],
-               [[SBSMember alloc] initWithDictionary:ronDictionary]];
+    datastore = [[SBSMemberDatastore alloc] initWithTestData];
   }
   return self;
 }
@@ -76,12 +54,12 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-  return [people count];
+  return [datastore count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
   UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"memberCell" forIndexPath:indexPath];
-  SBSMember *member = people[indexPath.row];
+  SBSMember *member = [datastore recordAtIndex:indexPath.row];
   cell.textLabel.text = member.name;
   return cell;
 }
@@ -136,7 +114,7 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
   if ([[segue identifier] isEqualToString:@"showMemberDetailsSegue"]) {
     NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-    SBSMember *person = people[indexPath.row];
+    SBSMember *person = [datastore recordAtIndex:indexPath.row];
     SBSPersonDetailsViewController *vc = segue.destinationViewController;
     vc.person = person;
   }

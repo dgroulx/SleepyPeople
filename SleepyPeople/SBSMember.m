@@ -13,6 +13,7 @@
 - (id)initWithDictionary:(NSDictionary *)properties {
   self = [super init];
   if (self) {
+    _objectId = properties[@"ObjectId"];
     _ama = properties[@"ama"];
     _bio = properties[@"bio"];
     _email = properties[@"email"];

@@ -10,6 +10,7 @@
 
 @interface SBSMember : NSObject
 
+@property NSString *objectId;
 @property NSString *ama;
 @property NSString *bio;
 @property NSString *email;

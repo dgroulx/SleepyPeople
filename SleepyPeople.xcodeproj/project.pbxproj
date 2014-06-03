@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		635AB29F193E37CD00CE9F5E /* SBSPersonDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 635AB29E193E37CD00CE9F5E /* SBSPersonDetailsViewController.m */; };
 		635AB2E9193E4BED00CE9F5E /* SBSMember.m in Sources */ = {isa = PBXBuildFile; fileRef = 635AB2E8193E4BED00CE9F5E /* SBSMember.m */; };
+		635AB2ED193E4F1100CE9F5E /* SBSMemberDatastore.m in Sources */ = {isa = PBXBuildFile; fileRef = 635AB2EC193E4F1100CE9F5E /* SBSMemberDatastore.m */; };
 		6370EF05193E0D420068F130 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6370EF04193E0D420068F130 /* Foundation.framework */; };
 		6370EF07193E0D420068F130 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6370EF06193E0D420068F130 /* CoreGraphics.framework */; };
 		6370EF09193E0D420068F130 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6370EF08193E0D420068F130 /* UIKit.framework */; };
@@ -40,6 +41,8 @@
 		635AB29E193E37CD00CE9F5E /* SBSPersonDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBSPersonDetailsViewController.m; sourceTree = "<group>"; };
 		635AB2E7193E4BED00CE9F5E /* SBSMember.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBSMember.h; sourceTree = "<group>"; };
 		635AB2E8193E4BED00CE9F5E /* SBSMember.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBSMember.m; sourceTree = "<group>"; };
+		635AB2EB193E4F1100CE9F5E /* SBSMemberDatastore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBSMemberDatastore.h; sourceTree = "<group>"; };
+		635AB2EC193E4F1100CE9F5E /* SBSMemberDatastore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBSMemberDatastore.m; sourceTree = "<group>"; };
 		6370EF01193E0D420068F130 /* SleepyPeople.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SleepyPeople.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6370EF04193E0D420068F130 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6370EF06193E0D420068F130 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -90,6 +93,8 @@
 			children = (
 				635AB2E7193E4BED00CE9F5E /* SBSMember.h */,
 				635AB2E8193E4BED00CE9F5E /* SBSMember.m */,
+				635AB2EB193E4F1100CE9F5E /* SBSMemberDatastore.h */,
+				635AB2EC193E4F1100CE9F5E /* SBSMemberDatastore.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -267,6 +272,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				635AB2ED193E4F1100CE9F5E /* SBSMemberDatastore.m in Sources */,
 				635AB2E9193E4BED00CE9F5E /* SBSMember.m in Sources */,
 				6370EF37193E0E400068F130 /* SBSPeopleListViewController.m in Sources */,
 				6370EF11193E0D420068F130 /* main.m in Sources */,
