@@ -44,23 +44,23 @@
                                         @"bio": @"",
                                         @"email": @"",
                                         @"fb": @"",
-                                        @"name": @"Trenton Broughton",
+                                        @"NAME": @"Trenton Broughton",
                                         @"twitter": @"",
-                                        @"pic": @""};
+                                        @"pic": [UIImage imageNamed:@"Black-Mage"]};
     NSDictionary *garrickDictionary = @{@"ama": @"",
                                         @"bio": @"",
                                         @"email": @"",
                                         @"fb": @"",
-                                        @"name": @"Garrick Pohl",
+                                        @"NAME": @"Garrick Pohl",
                                         @"twitter": @"",
-                                        @"pic": @""};
+                                        @"pic": [UIImage imageNamed:@"red-mage"]};
     NSDictionary *ronDictionary = @{@"ama": @"",
                                     @"bio": @"",
                                     @"email": @"",
                                     @"fb": @"",
-                                    @"name": @"Ron VanSurksum",
+                                    @"NAME": @"Ron VanSurksum",
                                     @"twitter": @"",
-                                    @"pic": @""};
+                                    @"pic": [UIImage imageNamed:@"white-mage"]};
     members = [@[[[SBSMember alloc] initWithDictionary:trentonDictionary],
                [[SBSMember alloc] initWithDictionary:garrickDictionary],
                [[SBSMember alloc] initWithDictionary:ronDictionary]] mutableCopy];

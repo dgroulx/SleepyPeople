@@ -14,5 +14,6 @@
 
 @property (nonatomic) SBSMember *person;
 @property IBOutlet UILabel *nameLabel;
+@property IBOutlet UIImageView *portrait;
 
 @end

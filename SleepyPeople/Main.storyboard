@@ -69,12 +69,17 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EKA-Ta-xXZ">
+                                <rect key="frame" x="40" y="154" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Member Details" id="Lx3-sI-Fbe"/>
                     <connections>
                         <outlet property="nameLabel" destination="2X0-dv-PaV" id="dXH-Cb-NQy"/>
+                        <outlet property="portrait" destination="EKA-Ta-xXZ" id="duo-v8-g81"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GjF-ep-V0e" userLabel="First Responder" sceneMemberID="firstResponder"/>
