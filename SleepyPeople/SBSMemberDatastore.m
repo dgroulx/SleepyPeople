@@ -30,7 +30,15 @@
     
     members = [NSMutableArray array];
     for (NSDictionary *memberDictionary in allMembers[@"results"]) {
-      [members addObject:[[SBSMember alloc] initWithDictionary:memberDictionary]];
+      // Get the actual image, reuse the request since it has http headers set already
+      request.URL = [NSURL URLWithString:memberDictionary[@"pic"][@"url"]];
+      NSLog(@"Downlading %@", memberDictionary[@"pic"][@"url"]);
+      NSData *imageData = [NSURLConnection sendSynchronousRequest:request returningResponse:nil error:nil];
+      UIImage *memberImage = [UIImage imageWithData:imageData];
+      
+      NSMutableDictionary *memberDictionaryWithPic = [memberDictionary mutableCopy];
+      memberDictionaryWithPic[@"pic"] = memberImage;
+      [members addObject:[[SBSMember alloc] initWithDictionary:memberDictionaryWithPic]];
     }
   }
   
