@@ -8,6 +8,11 @@
 
 #import "SBSMember.h"
 
+@interface SBSMember () {
+  UIImage *userImage;
+}
+@end
+
 @implementation SBSMember
 
 - (id)initWithDictionary:(NSDictionary *)properties {
@@ -20,9 +25,23 @@
     _fb = properties[@"FB"];
     _name = properties[@"NAME"];
     _twitter = properties[@"TWITTER"];
-    _pic = properties[@"pic"];
+    _picURL = [NSURL URLWithString:properties[@"picURL"]];
   }
   return self;
+}
+
+- (UIImage *)pic {
+  if (userImage == nil) {
+    // Get the actual image, reuse the request since it has http headers set already
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:@"https://api.parse.com/1/classes/member"]];
+    [request setValue:@"nq5kBbLQqWjW7taX9UVLoiEkyCDJ8gONbw92Fx6d" forHTTPHeaderField:@"X-Parse-Application-Id"];
+    [request setValue:@"hwz7WjcntmkHEphq0JazkvX1WoN4jcLi3IKo5UbY" forHTTPHeaderField:@"X-Parse-REST-API-Key"];
+    request.URL = self.picURL;
+    NSLog(@"Downlading %@", request.URL);
+    NSData *imageData = [NSURLConnection sendSynchronousRequest:request returningResponse:nil error:nil];
+    userImage = [UIImage imageWithData:imageData];
+  }
+  return userImage;
 }
 
 @end
